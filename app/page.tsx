@@ -63,10 +63,10 @@ export default function Page() {
                 <h1 className="text-4xl md:text-5xl font-bold text-purple-900 mb-4">
                   Hello, I am <span className="inline-block bg-pink-300 px-4 py-1 rounded-lg text-white">Ashii</span>
                 </h1>
-                <h2 className="text-4xl md:text-2xl font-bold text-purple-900">Gamer │ Content Creator │ Streamer</h2>
+                <h2 className="text-sm sm:text-base md:text-2xl font-bold text-purple-900 whitespace-nowrap">Gamer │ Content Creator │ Streamer</h2>
               </div>
               <p className="text-gray-600 text-base md:text-lg max-w-md">
-              Welcome! :) I play a variety of games, chat, stream IRL & more! I love interacting my community & making others happy ✨
+                Welcome! :) I play a variety of games, chat, stream IRL & more! I love interacting my community & making others happy ✨
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="w-full sm:w-auto bg-purple-400 hover:bg-purple-500" asChild>
