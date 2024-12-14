@@ -38,15 +38,13 @@ export default function Page() {
                     <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent>
+                <SheetContent side="top" className="w-full h-auto max-h-[250px]">
                   <div className="flex flex-col gap-4">
-                    <div className="flex justify-end pt-2">
-                      <MusicPlayer />
-                    </div>
-                    <div className="flex flex-col gap-4 pt-6">
-                      <a href="#" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">Home</a>
-                      <a href="#about" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">About</a>
-                      <a href="#contact" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">Contact</a>
+                    <MusicPlayer />
+                    <div className="flex flex-col gap-3">
+                      <a href="#" className="text-sm text-gray-600 hover:text-pink-400 transition">Home</a>
+                      <a href="#about" className="text-sm text-gray-600 hover:text-pink-400 transition">About</a>
+                      <a href="#contact" className="text-sm text-gray-600 hover:text-pink-400 transition">Contact</a>
                     </div>
                   </div>
                 </SheetContent>
