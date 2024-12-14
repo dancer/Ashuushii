@@ -118,7 +118,7 @@ export default function Page() {
                   <Smile className="h-6 w-6 text-pink-400" />
                 </div>
                 <div className="absolute -bottom-8 -right-8 w-14 h-14 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
-                  <Twitch className="h-7 w-7 text-pink-400" />
+                  <Youtube className="h-7 w-7 text-pink-400" />
                 </div>
 
                 {/* Main circle with gradient background */}
