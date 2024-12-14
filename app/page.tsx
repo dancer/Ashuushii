@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Camera, Heart, Mail, Twitch, Twitter, Youtube, DiscIcon as Discord, Smile, Instagram } from 'lucide-react'
+import { Camera, Heart, Mail, Twitch, Twitter, Youtube, Smile, Instagram } from 'lucide-react'
+import { FaDiscord } from 'react-icons/fa'
 import { TikTok } from '@/components/TikTok'
 import { SakuraBackground } from '@/components/SakuraBackground'
 import { YouTubePreview } from '@/components/YouTubePreview'
@@ -19,7 +20,7 @@ export default function Page() {
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <span className="text-3xl font-bubblegum text-pink-400">𝓪𝓼𝓱𝓾𝓾��𝓱𝓲𝓲</span>
+              <span className="text-3xl font-bubblegum text-pink-400">𝓪𝓼𝓱𝓾𝓾𝓼𝓱𝓲𝓲</span>
             </div>
             <div className="hidden md:flex items-center gap-6">
               <a href="#" className="text-sm text-gray-600 hover:text-pink-400 transition">Home</a>
@@ -54,7 +55,7 @@ export default function Page() {
                 </Button>
                 <Button variant="outline" className="border-pink-300 hover:bg-pink-100" asChild>
                   <a href="https://discord.gg/ashuushii" target="_blank" rel="noopener noreferrer">
-                    <Discord className="mr-2 h-4 w-4" />
+                    <FaDiscord className="mr-2 h-4 w-4" />
                     Join Discord
                   </a>
                 </Button>
