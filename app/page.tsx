@@ -47,13 +47,13 @@ export default function Page() {
                 Join our wonderful community where cuteness and creativity come together! Special emotes and badges included ✨
               </p>
               <div className="flex gap-4">
-                <Button className="bg-pink-400 hover:bg-pink-500" asChild>
+                <Button className="bg-purple-400 hover:bg-purple-500" asChild>
                   <a href="https://twitch.tv/ashiip0o" target="_blank" rel="noopener noreferrer">
                     <Twitch className="mr-2 h-4 w-4" />
                     Follow on Twitch
                   </a>
                 </Button>
-                <Button variant="outline" className="border-pink-300 hover:bg-pink-100" asChild>
+                <Button className="bg-pink-400 hover:bg-pink-500" asChild>
                   <a href="https://discord.gg/ashuushii" target="_blank" rel="noopener noreferrer">
                     <FaDiscord className="mr-2 h-4 w-4" />
                     Join Discord
