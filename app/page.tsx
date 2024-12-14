@@ -23,9 +23,9 @@ export default function Page() {
               <span className="text-3xl font-bubblegum text-pink-400">𝓪𝓼𝓱𝓾𝓾𝓼𝓱𝓲𝓲</span>
             </div>
             <div className="hidden md:flex items-center gap-6">
-              <a href="#" className="text-sm text-gray-600 hover:text-pink-400 transition">Home</a>
-              <a href="#about" className="text-sm text-gray-600 hover:text-pink-400 transition">About</a>
-              <a href="#contact" className="text-sm text-gray-600 hover:text-pink-400 transition">Contact</a>
+              <a href="#" className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">Home</a>
+              <a href="#about" className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">About</a>
+              <a href="#contact" className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">Contact</a>
               <MusicPlayer />
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function Page() {
       {/* Footer */}
       <footer className="py-8 px-6 border-t">
         <div className="container mx-auto text-center text-gray-600">
-          <p>© 2024 ashuushii. Made by <a href="https://x.com/dxd" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-500 transition">josh</a></p>
+          <p>© 2024 ashuushii. Made with 🩷</p>
         </div>
       </footer>
     </div>
