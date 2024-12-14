@@ -63,12 +63,12 @@ export default function Page() {
             <div className="space-y-6 md:space-y-8 relative z-10 bg-white/30 p-6 md:p-8 rounded-2xl backdrop-blur-sm">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-purple-900 mb-4">
-                  Interactive <span className="inline-block bg-pink-300 px-4 py-1 rounded-lg text-white">Community</span>
+                  Hello, I am <span className="inline-block bg-pink-300 px-4 py-1 rounded-lg text-white">Ashii</span>
                 </h1>
-                <h2 className="text-4xl md:text-5xl font-bold text-purple-900">Content Creator</h2>
+                <h2 className="text-4xl md:text-2xl font-bold text-purple-900">Gamer │ Content Creator │ Streamer</h2>
               </div>
               <p className="text-gray-600 text-base md:text-lg max-w-md">
-                Join our wonderful community where cuteness and creativity come together! Special emotes and badges included ✨
+              Welcome! :) I play a variety of games, chat, stream IRL & more! I love interacting my community & making others happy ✨
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="w-full sm:w-auto bg-purple-400 hover:bg-purple-500" asChild>
@@ -144,20 +144,20 @@ export default function Page() {
         <div className="container mx-auto">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl">
             <h2 className="text-xl md:text-2xl font-bold text-center text-purple-900 mb-6 md:mb-8">
-              Trusted by the community from different countries
+              Our community is growing!
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
               <div className="text-center space-y-2">
-                <div className="text-2xl md:text-3xl font-bold text-pink-400">50+</div>
-                <div className="text-gray-600">Countries</div>
+                <div className="text-2xl md:text-3xl font-bold text-pink-400">100 +</div>
+                <div className="text-gray-600">Discord Members</div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-2xl md:text-3xl font-bold text-pink-400">17k</div>
-                <div className="text-gray-600">Community Members</div>
+                <div className="text-2xl md:text-3xl font-bold text-pink-400">20k +</div>
+                <div className="text-gray-600">Followers</div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-2xl md:text-3xl font-bold text-pink-400">28</div>
-                <div className="text-gray-600">Emote Artists</div>
+                <div className="text-2xl md:text-3xl font-bold text-pink-400">10 +</div>
+                <div className="text-gray-600">Collabs</div>
               </div>
             </div>
           </div>
@@ -190,6 +190,9 @@ export default function Page() {
                     Hey there! I'm your friendly neighborhood content creator who loves gaming, 
                     anime, and creating a positive space for everyone. When I'm not streaming, 
                     you can find me crafting, playing with my cats, or watching anime!
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    I'm a huge fan of the <span className="inline-block bg-pink-300 px-4 py-1 rounded-lg text-white">Valorant</span> community, and I love to support them in any way I can.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Button 
