@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-bubblegum {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+:root {
+  --background: 330 100% 98%;
+  --foreground: 330 10% 15%;
+  --card: 330 100% 98%;
+  --card-foreground: 330 10% 15%;
+  --popover: 330 100% 98%;
+  --popover-foreground: 330 10% 15%;
+  --primary: 330 90% 70%;
+  --primary-foreground: 330 10% 98%;
+  --secondary: 330 50% 90%;
+  --secondary-foreground: 330 10% 15%;
+  --muted: 330 50% 90%;
+  --muted-foreground: 330 10% 40%;
+  --accent: 330 50% 90%;
+  --accent-foreground: 330 10% 15%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 330 10% 98%;
+  --border: 330 50% 80%;
+  --input: 330 50% 80%;
+  --ring: 330 90% 70%;
+  --radius: 1rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float-button {
+  0%, 100% {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) scale(1);
+  }
+  50% {
+    transform: translate(var(--tw-translate-x), calc(var(--tw-translate-y) - 5px)) scale(1.05);
+  }
+}
+
+.animate-float-button {
+  animation: float-button 3s ease-in-out infinite;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
