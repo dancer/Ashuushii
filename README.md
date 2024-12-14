@@ -16,26 +16,26 @@ ashuushii is a content creator and streamer, focusing on:
 Want to run this project locally? Here's how!
 
 1. Clone this repository:
-   \`\`\`
+   ```
    git clone https://github.com/yourusername/ashuushii.git
-   \`\`\`
+   ```
 
 2. Navigate to the project directory:
-   \`\`\`
+   ```
    cd ashuushii
-   \`\`\`
+   ```
 
 3. Install the dependencies:
-   \`\`\`
+   ```
    npm install
-   \`\`\`
+   ```
 
 4. Run the development server:
-   \`\`\`
+   ```
    npm run dev
-   \`\`\`
+   ```
 
-5. Open your browser and visit \`http://ashuushii.com\` - Welcome! 💖
+5. Open your browser and visit `http://ashuushii.com` - Welcome! 💖
 
 ## 🎀 Features
 
@@ -53,14 +53,6 @@ Want to run this project locally? Here's how!
 - Shadcn UI - For beautiful UI components
 - TypeScript - For type-safe code
 - Lucide React - For elegant icons
-
-## 💝 Contributing
-
-We'd love your contributions! Please read our \`CONTRIBUTING.md\` file for details on our code of conduct and the process for submitting pull requests.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the \`LICENSE.md\` file for details.
 
 ## 💖 Acknowledgments
 
