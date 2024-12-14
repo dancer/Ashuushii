@@ -39,12 +39,14 @@ export default function Page() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent>
-                  <div className="flex flex-col gap-4 pt-10">
-                    <a href="#" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">Home</a>
-                    <a href="#about" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">About</a>
-                    <a href="#contact" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">Contact</a>
-                    <div className="pt-4">
+                  <div className="flex flex-col gap-4">
+                    <div className="flex justify-end pt-2">
                       <MusicPlayer />
+                    </div>
+                    <div className="flex flex-col gap-4 pt-6">
+                      <a href="#" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">Home</a>
+                      <a href="#about" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">About</a>
+                      <a href="#contact" className="font-bold text-lg text-gray-600 hover:text-pink-400 transition">Contact</a>
                     </div>
                   </div>
                 </SheetContent>
