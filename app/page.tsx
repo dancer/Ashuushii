@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Camera, Heart, Mail, Twitch, Twitter, Youtube, Smile, Instagram, Menu } from 'lucide-react'
@@ -15,6 +16,15 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { FlowerBackground } from '@/components/FlowerBackground'
 
 export default function Page() {
+  useEffect(() => {
+    // Force scroll to top on page load
+    window.scrollTo(0, 0);
+    // Prevent scroll restoration
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  }, []);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
