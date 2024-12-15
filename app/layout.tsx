@@ -18,6 +18,20 @@ export const metadata: Metadata = {
   title: "Ashuushii",
   description: "Gamer, Streamer, Content Creator | Join my community for gaming, anime, and positive vibes ✨",
   metadataBase: new URL('https://ashuushii.com'),
+  appleWebApp: {
+    capable: true,
+    title: "Ashuushii",
+    statusBarStyle: "default",
+  },
+  icons: {
+    apple: [
+      {
+        url: "/180.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+  },
   openGraph: {
     title: "Ashuushii",
     description: "Gamer, Streamer, Content Creator | Join my community for gaming, anime, and positive vibes ✨",
