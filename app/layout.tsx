@@ -16,7 +16,26 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ashuushii",
-  description: "Gamer, Streamer, Creator",
+  description: "Gamer, Streamer, Content Creator | Join my community for gaming, anime, and positive vibes ✨",
+  metadataBase: new URL('https://ashuushii.com'),
+  openGraph: {
+    title: "Ashuushii",
+    description: "Gamer, Streamer, Content Creator | Join my community for gaming, anime, and positive vibes ✨",
+    images: [{
+      url: '/meta.png',
+      width: 1200,
+      height: 630,
+      alt: 'Ashuushii - Gamer, Streamer, Content Creator'
+    }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Ashuushii",
+    description: "Gamer, Streamer, Content Creator | Join my community for gaming, anime, and positive vibes ✨",
+    images: ['/meta.png'],
+    creator: '@ashuushii'
+  }
 };
 
 export default function RootLayout({
