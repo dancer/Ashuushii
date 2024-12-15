@@ -9,7 +9,7 @@ import { PhotoGallery } from '@/components/PhotoGallery'
 import { MusicPlayer } from '@/components/MusicPlayer'
 import { Testimonial } from '@/components/Testimonial'
 import { FloatingHearts } from '@/components/FloatingHearts'
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 
 export default function Page() {
   return (
@@ -19,9 +19,17 @@ export default function Page() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-2">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between max-w-7xl mx-auto">
             <div className="flex items-center gap-2">
-              <span className="text-2xl md:text-3xl font-bubblegum text-pink-400">𝓪𝓼𝓱𝓾𝓾𝓼𝓱𝓲𝓲</span>
+              <div className="relative w-8 h-8 md:w-10 md:h-10">
+                <Image
+                  src="/pixel.png"
+                  alt="Ashuushii Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-2xl md:text-3xl font-bubblegum text-pink-400 pl-2 md:pl-3">𝓪𝓼𝓱𝓾𝓾𝓼𝓱𝓲𝓲</span>
             </div>
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6">
@@ -39,6 +47,7 @@ export default function Page() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="top" className="w-full h-auto max-h-[250px]">
+                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                   <div className="flex flex-col gap-4">
                     <MusicPlayer />
                     <div className="flex flex-col gap-3">
@@ -57,79 +66,91 @@ export default function Page() {
       {/* Hero Section */}
       <section className="pt-24 md:pt-32 pb-16 px-4 md:px-6 relative overflow-hidden">
         <div className="container mx-auto relative">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-6 md:space-y-8 relative z-10 bg-white/30 p-6 md:p-8 rounded-2xl backdrop-blur-sm">
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold text-purple-900 mb-4">
-                  Hello, I am <span className="inline-block bg-pink-300 px-4 py-1 rounded-lg text-white">Ashii</span>
-                </h1>
-                <h2 className="text-sm sm:text-base md:text-2xl font-bold text-purple-900 whitespace-nowrap">Gamer │ Content Creator │ Streamer</h2>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="space-y-6 md:space-y-8 relative z-10 bg-white/30 p-6 md:p-8 rounded-2xl backdrop-blur-sm">
+                <div className="space-y-4">
+                  <h1 className="text-4xl md:text-5xl font-bold text-purple-900 mb-4">
+                    <span className="animate-title">Hello,</span>{' '}
+                    <span className="animate-title">I</span>{' '}
+                    <span className="animate-title">am</span>{' '}
+                    <span className="animate-title bg-pink-300 px-4 py-1 rounded-lg text-white hover:scale-110 transition-transform">Ashii</span>
+                  </h1>
+                  <h2 className="text-sm sm:text-base md:text-2xl font-bold text-purple-900 whitespace-nowrap">
+                    <span className="animate-subtitle">Gamer</span>{' '}
+                    <span className="animate-subtitle">│</span>{' '}
+                    <span className="animate-subtitle">Content</span>{' '}
+                    <span className="animate-subtitle">Creator</span>{' '}
+                    <span className="animate-subtitle">│</span>{' '}
+                    <span className="animate-subtitle">Streamer</span>
+                  </h2>
+                </div>
+                <p className="text-gray-600 text-base md:text-lg max-w-md">
+                  Welcome! :) I play a variety of games, chat, stream IRL & more! I love interacting my community & making others happy ✨
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button className="w-full sm:w-auto bg-purple-400 hover:bg-purple-500" asChild>
+                    <a href="https://twitch.tv/ashiip0o" target="_blank" rel="noopener noreferrer">
+                      <Twitch className="mr-2 h-4 w-4" />
+                      Follow on Twitch
+                    </a>
+                  </Button>
+                  <Button className="w-full sm:w-auto bg-pink-400 hover:bg-pink-500" asChild>
+                    <a href="https://discord.gg/ashuushii" target="_blank" rel="noopener noreferrer">
+                      <FaDiscord className="mr-2 h-4 w-4" />
+                      Join Discord
+                    </a>
+                  </Button>
+                </div>
               </div>
-              <p className="text-gray-600 text-base md:text-lg max-w-md">
-                Welcome! :) I play a variety of games, chat, stream IRL & more! I love interacting my community & making others happy ✨
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="w-full sm:w-auto bg-purple-400 hover:bg-purple-500" asChild>
-                  <a href="https://twitch.tv/ashiip0o" target="_blank" rel="noopener noreferrer">
-                    <Twitch className="mr-2 h-4 w-4" />
-                    Follow on Twitch
-                  </a>
-                </Button>
-                <Button className="w-full sm:w-auto bg-pink-400 hover:bg-pink-500" asChild>
-                  <a href="https://discord.gg/ashuushii" target="_blank" rel="noopener noreferrer">
-                    <FaDiscord className="mr-2 h-4 w-4" />
-                    Join Discord
-                  </a>
-                </Button>
-              </div>
-            </div>
-            <div className="relative flex items-center justify-center">
-              <div className="relative w-60 h-60 md:w-72 md:h-72">
-                {/* Orbital circles */}
-                <div className="absolute inset-0 -m-8">
-                  <div 
-                    className="absolute w-full h-full rounded-full border-2 border-pink-200/30"
-                  />
-                </div>
-                <div className="absolute inset-0 -m-16">
-                  <div 
-                    className="absolute w-full h-full rounded-full border-2 border-pink-200/20"
-                  />
-                </div>
-                <div className="absolute inset-0 -m-24">
-                  <div 
-                    className="absolute w-full h-full rounded-full border-2 border-pink-200/10"
-                  />
-                </div>
-                <div className="absolute inset-0 -m-32">
-                  <div 
-                    className="absolute w-full h-full rounded-full border-2 border-pink-200/5"
-                  />
-                </div>
+              <div className="relative flex items-center justify-center">
+                <div className="relative w-60 h-60 md:w-72 md:h-72">
+                  {/* Orbital circles */}
+                  <div className="absolute inset-0 -m-8">
+                    <div 
+                      className="absolute w-full h-full rounded-full border-2 border-pink-200/30"
+                    />
+                  </div>
+                  <div className="absolute inset-0 -m-16">
+                    <div 
+                      className="absolute w-full h-full rounded-full border-2 border-pink-200/20"
+                    />
+                  </div>
+                  <div className="absolute inset-0 -m-24">
+                    <div 
+                      className="absolute w-full h-full rounded-full border-2 border-pink-200/10"
+                    />
+                  </div>
+                  <div className="absolute inset-0 -m-32">
+                    <div 
+                      className="absolute w-full h-full rounded-full border-2 border-pink-200/5"
+                    />
+                  </div>
 
-                {/* Floating icons */}
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
-                  <Heart className="h-4 w-4 text-pink-400" />
-                </div>
-                <div className="absolute -top-8 -right-8 w-16 h-16 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
-                  <Camera className="h-8 w-8 text-pink-400" />
-                </div>
-                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
-                  <Smile className="h-6 w-6 text-pink-400" />
-                </div>
-                <div className="absolute -bottom-8 -right-8 w-14 h-14 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
-                  <Youtube className="h-7 w-7 text-pink-400" />
-                </div>
+                  {/* Floating icons */}
+                  <div className="absolute -top-4 -left-4 w-8 h-8 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
+                    <Heart className="h-4 w-4 text-pink-400" />
+                  </div>
+                  <div className="absolute -top-8 -right-8 w-16 h-16 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
+                    <Camera className="h-8 w-8 text-pink-400" />
+                  </div>
+                  <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
+                    <Smile className="h-6 w-6 text-pink-400" />
+                  </div>
+                  <div className="absolute -bottom-8 -right-8 w-14 h-14 bg-pink-100 rounded-full shadow-lg flex items-center justify-center">
+                    <Youtube className="h-7 w-7 text-pink-400" />
+                  </div>
 
-                {/* Main circle with gradient background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full blur-3xl opacity-50" />
-                <div className="relative rounded-full overflow-hidden border-8 border-white/50 w-full h-full">
-                  <Image
-                    src="/main.png"
-                    alt="Ashuushii"
-                    fill
-                    className="object-cover"
-                  />
+                  {/* Main circle with gradient background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full blur-3xl opacity-50" />
+                  <div className="relative rounded-full overflow-hidden border-8 border-white/50 w-full h-full">
+                    <Image
+                      src="/main.png"
+                      alt="Ashuushii"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
