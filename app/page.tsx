@@ -92,28 +92,34 @@ export default function Page() {
       <section id="top" className="pt-24 md:pt-32 pb-16 px-4 md:px-6 relative overflow-hidden">
         <div className="container mx-auto relative">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="space-y-6 md:space-y-8 relative z-10 bg-white/30 p-6 md:p-8 rounded-2xl backdrop-blur-sm">
-                <div className="space-y-4">
-                  <h1 className="text-4xl md:text-5xl font-bold text-purple-900 mb-4">
-                    <span className="animate-title">Hello,</span>{' '}
-                    <span className="animate-title">I</span>{' '}
-                    <span className="animate-title">am</span>{' '}
-                    <span className="animate-title bg-pink-300 px-4 py-1 rounded-lg text-white hover:scale-110 transition-transform">Ashii</span>
-                  </h1>
-                  <h2 className="text-sm sm:text-base md:text-2xl font-bold text-purple-900 whitespace-nowrap">
-                    <span className="animate-subtitle">Gamer</span>{' '}
-                    <span className="animate-subtitle">│</span>{' '}
-                    <span className="animate-subtitle">Content</span>{' '}
-                    <span className="animate-subtitle">Creator</span>{' '}
-                    <span className="animate-subtitle">│</span>{' '}
-                    <span className="animate-subtitle">Streamer</span>
-                  </h2>
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div className="space-y-8 md:space-y-10 relative z-10 bg-white/30 p-8 md:p-10 rounded-2xl backdrop-blur-sm w-full max-w-3xl mx-auto lg:mx-0">
+                <div className="space-y-8 md:space-y-10">
+                  <div className="space-y-4 md:space-y-6">
+                    <h1 className="text-4xl md:text-5xl font-bold text-purple-900">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+                        <span className="animate-title">Hello,</span>
+                        <span className="animate-title">I</span>
+                        <span className="animate-title">am</span>
+                        <span className="animate-title bg-pink-300 px-4 py-1 rounded-lg text-white hover:scale-110 transition-transform inline-block">Ashuushii</span>
+                      </div>
+                    </h1>
+                    <h2 className="text-sm sm:text-base md:text-2xl font-bold text-purple-900 pt-2">
+                      <div className="flex flex-wrap gap-x-3 gap-y-2 items-center">
+                        <span className="animate-subtitle">Gamer</span>
+                        <span className="animate-subtitle">│</span>
+                        <span className="animate-subtitle">Content</span>
+                        <span className="animate-subtitle">Creator</span>
+                        <span className="animate-subtitle">│</span>
+                        <span className="animate-subtitle">Streamer</span>
+                      </div>
+                    </h2>
+                  </div>
                 </div>
-                <p className="text-gray-600 text-base md:text-lg max-w-md">
+                <p className="text-gray-600 text-base md:text-lg max-w-md pt-2">
                   Welcome! :) I play a variety of games, chat, stream IRL & more! I love interacting my community & making others happy ✨
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 pt-2">
                   <Button className="w-full sm:w-auto bg-purple-400 hover:bg-purple-500" asChild>
                     <a href="https://twitch.tv/ashiip0o" target="_blank" rel="noopener noreferrer">
                       <Twitch className="mr-2 h-4 w-4" />
@@ -210,7 +216,7 @@ export default function Page() {
 
       {/* Testimonial Section */}
       <section className="py-12 md:py-16 px-4 md:px-6">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-purple-900 mb-6 md:mb-8">
             What Our Community Says
           </h2>
