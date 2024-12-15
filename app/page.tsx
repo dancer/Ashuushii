@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Camera, Heart, Mail, Twitch, Twitter, Youtube, Smile, Instagram, Menu } from 'lucide-react'
@@ -13,6 +15,13 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { FlowerBackground } from '@/components/FlowerBackground'
 
 export default function Page() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-pink-50/50 relative overflow-hidden">
       <SakuraBackground />
@@ -35,9 +44,9 @@ export default function Page() {
             </div>
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6">
-              <a href="#" className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">Home</a>
-              <a href="#about" className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">About</a>
-              <a href="#contact" className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">Contact</a>
+              <button onClick={() => scrollToSection('top')} className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">Home</button>
+              <button onClick={() => scrollToSection('about')} className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">About</button>
+              <button onClick={() => scrollToSection('contact')} className="font-bold text-sm text-gray-600 hover:text-pink-400 transition">Contact</button>
               <MusicPlayer />
             </div>
             {/* Mobile Navigation */}
@@ -53,9 +62,9 @@ export default function Page() {
                   <div className="flex flex-col gap-4">
                     <MusicPlayer />
                     <div className="flex flex-col gap-3">
-                      <a href="#" className="text-sm text-gray-600 hover:text-pink-400 transition">Home</a>
-                      <a href="#about" className="text-sm text-gray-600 hover:text-pink-400 transition">About</a>
-                      <a href="#contact" className="text-sm text-gray-600 hover:text-pink-400 transition">Contact</a>
+                      <button onClick={() => scrollToSection('top')} className="text-sm text-gray-600 hover:text-pink-400 transition">Home</button>
+                      <button onClick={() => scrollToSection('about')} className="text-sm text-gray-600 hover:text-pink-400 transition">About</button>
+                      <button onClick={() => scrollToSection('contact')} className="text-sm text-gray-600 hover:text-pink-400 transition">Contact</button>
                     </div>
                   </div>
                 </SheetContent>
@@ -66,7 +75,7 @@ export default function Page() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 md:pt-32 pb-16 px-4 md:px-6 relative overflow-hidden">
+      <section id="top" className="pt-24 md:pt-32 pb-16 px-4 md:px-6 relative overflow-hidden">
         <div className="container mx-auto relative">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
