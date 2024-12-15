@@ -22,8 +22,12 @@ export default function Page() {
     }
   };
 
+  const preventContextMenu = (e: React.MouseEvent) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className="min-h-screen bg-pink-50/50 relative overflow-hidden">
+    <div className="min-h-screen bg-pink-50/50 relative overflow-hidden" onContextMenu={preventContextMenu}>
       <SakuraBackground />
       <FlowerBackground />
       <FloatingHearts />
@@ -37,7 +41,7 @@ export default function Page() {
                   src="/pixel.png"
                   alt="Ashuushii Logo"
                   fill
-                  className="object-contain"
+                  className="object-contain pointer-events-none"
                 />
               </div>
               <span className="text-2xl md:text-3xl font-bubblegum text-pink-400 pl-2 md:pl-3">𝓪𝓼𝓱𝓾𝓾𝓼𝓱𝓲𝓲</span>
