@@ -10,11 +10,13 @@ import { MusicPlayer } from '@/components/MusicPlayer'
 import { Testimonial } from '@/components/Testimonial'
 import { FloatingHearts } from '@/components/FloatingHearts'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
+import { FlowerBackground } from '@/components/FlowerBackground'
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-pink-50/50 relative overflow-hidden">
       <SakuraBackground />
+      <FlowerBackground />
       <FloatingHearts />
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm border-b">
