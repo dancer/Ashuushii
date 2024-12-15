@@ -53,13 +53,6 @@ input, textarea {
 .animate-subtitle:nth-child(5) { animation-delay: 0.9s; }
 .animate-subtitle:nth-child(6) { animation-delay: 1s; }
 
-/* Stop animation on scroll */
-html:not([data-scroll='0']) .animate-title,
-html:not([data-scroll='0']) .animate-subtitle {
-  animation: none;
-  transform: translateY(0);
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
