@@ -5,10 +5,12 @@ import { useEffect } from 'react'
 export default function ScrollProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const html = document.documentElement
-    let scrollPosition = 0
+    
+    // Set initial scroll state to '0'
+    html.setAttribute('data-scroll', '0')
     
     const handleScroll = () => {
-      scrollPosition = window.scrollY
+      const scrollPosition = window.scrollY
       html.setAttribute('data-scroll', scrollPosition.toString())
     }
 
