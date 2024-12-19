@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ashuushii.com/sitemap.xml 
