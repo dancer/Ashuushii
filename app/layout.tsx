@@ -37,6 +37,8 @@ export const metadata: Metadata = {
     description: "Gamer, Streamer, Content Creator | Join my community for gaming, anime, and positive vibes ✨",
     images: [{
       url: 'https://ashuushii.com/metadata.png',
+      width: 1200,
+      height: 630,
       alt: 'Ashuushii - Gamer, Streamer, Content Creator'
     }],
     type: 'website',
@@ -45,7 +47,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Ashuushii",
     description: "Gamer, Streamer, Content Creator | Join my community for gaming, anime, and positive vibes ✨",
-    images: ['https://ashuushii.com/metadata.png'],
+    images: [{
+      url: 'https://ashuushii.com/metadata.png',
+      width: 1200,
+      height: 630,
+      alt: 'Ashuushii - Gamer, Streamer, Content Creator'
+    }],
     creator: '@ashuushii'
   }
 };
