@@ -6,7 +6,11 @@ export default function JsonLd() {
     "url": "https://ashuushii.com",
     "sameAs": [
       "https://twitter.com/ashuushii",
-      // Add other social media URLs
+      "https://x.com/ashuushii",
+      "https://www.youtube.com/@ashuushii",
+      "https://www.instagram.com/ashuushii",
+      "https://www.tiktok.com/@ashuushii",
+      "https://www.twitch.tv/ashiip0o",
     ],
     "description": "Gamer, Streamer, and Content Creator known as Ashuushii",
     "image": "https://ashuushii.com/metadata.png"
