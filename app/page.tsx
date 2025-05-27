@@ -138,22 +138,22 @@ export default function Page() {
                 <div className="relative w-60 h-60 md:w-72 md:h-72">
                   {/* Orbital circles */}
                   <div className="absolute inset-0 -m-8">
-                    <div 
+                    <div
                       className="absolute w-full h-full rounded-full border-2 border-pink-200/30"
                     />
                   </div>
                   <div className="absolute inset-0 -m-16">
-                    <div 
+                    <div
                       className="absolute w-full h-full rounded-full border-2 border-pink-200/20"
                     />
                   </div>
                   <div className="absolute inset-0 -m-24">
-                    <div 
+                    <div
                       className="absolute w-full h-full rounded-full border-2 border-pink-200/10"
                     />
                   </div>
                   <div className="absolute inset-0 -m-32">
-                    <div 
+                    <div
                       className="absolute w-full h-full rounded-full border-2 border-pink-200/5"
                     />
                   </div>
@@ -237,17 +237,17 @@ export default function Page() {
                 <div className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-bold text-purple-900">About Me</h2>
                   <p className="text-gray-600 leading-relaxed">
-                    Hey there! I'm your friendly neighborhood content creator who loves gaming, 
-                    anime, and creating a positive space for everyone. When I'm not streaming, 
+                    Hey there! I&apos;m your friendly neighborhood content creator who loves gaming,
+                    anime, and creating a positive space for everyone. When I&apos;m not streaming,
                     you can find me crafting, playing with my cats, or watching anime!
                   </p>
                   <p className="text-gray-600 leading-relaxed">
-                    I'm a huge fan of the <span className="inline-block bg-pink-300 px-4 py-1 rounded-lg text-white">Valorant</span> community, and I love to support them in any way I can.
+                    I&apos;m a huge fan of the <span className="inline-block bg-pink-300 px-4 py-1 rounded-lg text-white">Valorant</span> community, and I love to support them in any way I can.
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-pink-200 hover:bg-pink-50"
                       asChild
                     >
@@ -255,9 +255,9 @@ export default function Page() {
                         <Twitter className="h-4 w-4 text-pink-400" />
                       </a>
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-pink-200 hover:bg-pink-50"
                       asChild
                     >
@@ -265,9 +265,9 @@ export default function Page() {
                         <Youtube className="h-4 w-4 text-pink-400" />
                       </a>
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-pink-200 hover:bg-pink-50"
                       asChild
                     >
@@ -275,9 +275,9 @@ export default function Page() {
                         <Instagram className="h-4 w-4 text-pink-400" />
                       </a>
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
+                    <Button
+                      variant="outline"
+                      size="icon"
                       className="rounded-full border-pink-200 hover:bg-pink-50"
                       asChild
                     >
@@ -299,11 +299,19 @@ export default function Page() {
       <section id="contact" className="py-12 md:py-16 px-4 md:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 to-purple-50/50" />
         <div className="container mx-auto max-w-xl text-center relative">
-          <h2 className="text-2xl md:text-3xl font-bold text-purple-900 mb-4">Let's Connect!</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-purple-900 mb-4">Let&apos;s Connect!</h2>
           <p className="text-gray-600 mb-6 md:mb-8">Have a question or want to collaborate? Feel free to reach out!</p>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl">
             <Button className="w-full bg-pink-400 hover:bg-pink-500" asChild>
-              <a href="mailto:contact@ashuushii.com">
+              <a
+                href="mailto:contact@ashuushii.com"
+                onClick={() => {
+                  window.location.href = 'mailto:contact@ashuushii.com';
+                  window.open('mailto:contact@ashuushii.com', '_blank');
+                }}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <Mail className="mr-2 h-4 w-4" />
                 Email me
               </a>
