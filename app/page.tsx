@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Camera, Heart, Mail, Twitch, Twitter, Youtube, Smile, Instagram, Menu } from 'lucide-react'
+import { Camera, Heart, Mail, Twitter, Youtube, Smile, Instagram, Menu } from 'lucide-react'
 import { FaDiscord } from 'react-icons/fa'
 import { TikTok } from '@/components/TikTok'
 import { SakuraBackground } from '@/components/SakuraBackground'
@@ -120,10 +120,10 @@ export default function Page() {
                   Welcome! :) I play a variety of games, chat, stream IRL & more! I love interacting my community & making others happy ✨
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                  <Button className="w-full sm:w-auto bg-purple-400 hover:bg-purple-500" asChild>
-                    <a href="https://twitch.tv/ashiip0o" target="_blank" rel="noopener noreferrer">
-                      <Twitch className="mr-2 h-4 w-4" />
-                      Follow on Twitch
+                  <Button className="w-full sm:w-auto bg-black hover:bg-gray-800" asChild>
+                    <a href="https://tiktok.com/@ashuushii" target="_blank" rel="noopener noreferrer">
+                      <TikTok className="mr-2 h-4 w-4" />
+                      Follow on TikTok
                     </a>
                   </Button>
                   <Button className="w-full sm:w-auto bg-pink-400 hover:bg-pink-500" asChild>
@@ -285,16 +285,7 @@ export default function Page() {
                         <TikTok className="h-4 w-4 text-pink-400" />
                       </a>
                     </Button>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
-                      className="rounded-full border-pink-200 hover:bg-pink-50"
-                      asChild
-                    >
-                      <a href="https://twitch.tv/ashiip0o" target="_blank" rel="noopener noreferrer">
-                        <Twitch className="h-4 w-4 text-pink-400" />
-                      </a>
-                    </Button>
+
                   </div>
                 </div>
               </div>
